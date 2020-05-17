@@ -1,3 +1,40 @@
-.body {
-  background: black;
+body{
+  background-image: url('https://images.unsplash.com/photo-1586775490184-b79f0621891f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-size: 100vw;
+  font-family: Arial;
+  height: 100vh;
+}
+
+.menu {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+a {
+  font-size: 16pt;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+a:hover {
+  text-decorator: underline;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.site-title,
+.site-subtitle
+{
+  color: #1e1e1e;
+  text-align: center;   
+}
+
+.site-subtitle{
+  font-style: italic;
 }
