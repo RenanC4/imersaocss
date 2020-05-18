@@ -1,12 +1,38 @@
+/* soft reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   background-image: url('https://images.unsplash.com/photo-1586775490184-b79f0621891f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
   background-size: 100vw;
-  font-family: Arial;
+  font-family: 'Cuprum', sans-serif;
   height: 100vh;
+  font-size: 26px;
+}
+
+@media(max-width: 1024px){
+  body{ background-size: 100vw;
+    font-size: 16px;
+    background-image: url('https://images.unsplash.com/photo-1580236176063-bea7f16aec30?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=621&q=80');
+    font-family: 'Cuprum', sans-serif;
+  }
+
+}
+header{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
 }
 
 .menu {
   background-color: rgba(255, 255, 255, 0.25);
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 a {
@@ -16,9 +42,15 @@ a {
 }
 
 a:hover {
-  text-decorator: underline;
+  text-decoration: underline;
 }
-
+.menu a{
+  font-family: 'Acme', sans-serif;
+  font-weight: bolder;
+  display: block;
+  padding: 20px 20px;
+  
+}
 .menu ul {
   display: flex;
   justify-content: space-evenly;
@@ -37,4 +69,14 @@ a:hover {
 
 .site-subtitle{
   font-style: italic;
+}
+
+.img-portfolio{
+  width: 200px;
+  height: 200px;
+}
+
+.js-div{
+  display: inline; 
+  background-color: rgb(238, 212, 64);
 }

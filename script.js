@@ -1,1 +1,1 @@
-console.log('aehooo')
+console.log('Não é preguiça, é minimalismo!')
